@@ -18,7 +18,12 @@ public class TimeFormat {
 			hours = hours - 12;
 			day = "PM";
 		}
+		if (minutes<10) {
+			System.out.println(hours + ":0" + minutes + " " + day);
+		}
+		else{
 		System.out.println(hours + ":" + minutes + " " + day);
+		}
         // Replace this comment with the rest of your code
 	}
 }
