@@ -15,7 +15,9 @@ public class TimeFormat {
 		String day = "AM";
 		if(hours>11)
 		{
-			hours = hours - 12;
+			if (hours>12) {
+				hours = hours - 12;
+			}
 			day = "PM";
 		}
 		if (minutes<10) {
